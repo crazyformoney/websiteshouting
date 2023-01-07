@@ -65,7 +65,35 @@ const BLOCKCHAIN_EXPLORERS = {
 /**
  * ABI needed to interpret how to interact with the contract
  */
-const CONTRACT_ABI =[];
+const CONTRACT_ABI =[
+		{
+				"inputs": [],
+				"name": "my_function1",
+				"outputs": [
+					{
+						"internalType": "string",
+						"name": "",
+						"type": "string"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "txt",
+						"type": "string"
+					}
+				],
+				"name": "my_function2",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			}
+
+];
 
 // Functions
 // ========================================================
